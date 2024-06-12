@@ -1,0 +1,147 @@
+
+header{
+    background-color: green;
+}
+.button{
+    width: 15%;
+    text-align: center;
+    align-items: center;
+    margin-left: 500px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    
+}
+.button a{
+    font-size: x-large;
+    text-decoration: none;
+    color: green;
+}
+ .button:hover {
+    color: white;
+    background-color: green;
+  }
+  .button a:hover {
+    color: white;
+    background-color: green;
+  }
+ a{
+   text-decoration: none;
+   color: black;
+    
+}
+#link{
+    margin-left: 1650px;
+    text-decoration: none;
+    color: black;
+}
+#link1{
+    text-decoration: none;
+    color: black;
+}
+.img{
+    border: none;
+    outline: none;
+    width: 50%;
+    height: 50%;
+}
+
+
+ .form-group input{
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+    text-align: center;
+}
+.row{
+    margin-top: 10px;
+}
+.n{
+    text-align: left;
+    background-color: 	#ADFF2F;
+    padding: 20px;
+    color: black;
+    margin: 0;
+}
+
+.click{
+    background-color: green;
+    margin: 5px 0;
+    color: white;
+}
+.click h2{
+    padding-top: 5px;
+    padding-bottom: 30px;
+
+}
+.click p{
+    padding-left: 65px;
+
+}
+.form-label {
+    display: block;
+    margin-bottom: 5px;
+}
+.form-group {
+    width: 50%;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+}
+.form-containerb .form-group input{
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+    text-align: center;
+}
+.form-container {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.form-containerb {
+    margin-left: 400px;
+}
+.b{
+    margin-left: 200px;
+}
+.h{
+    margin-left: 20px;
+    width: 150px;
+}
+.b a{
+    text-decoration: none;
+}
+.b a:hover {
+    color: white;
+  }
+ /* .key{
+    margin: 20px;
+    text-align: end;
+ } */
+
+ .login{
+    text-align: center;
+    align-items: center;
+ }
+ .containers {
+    display: flex;
+    justify-content: center;
+     padding: 20px; 
+  }
+  .form-groups {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  .form-groups label {
+    margin: 0;
+     margin-right: 10px; 
+    min-width: 100px;
+    text-align: end; 
+    font-weight: 100;
+  }
+  .form-groups input {
+     flex: 1;
+    width: 500px;
+  }
+
