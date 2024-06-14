@@ -31,16 +31,21 @@ body{
  a{
    text-decoration: none;
    color: black;
+   font-size: small;
     
 }
+.p{
+  margin-bottom: 20px;
+}
 #link{
-    margin-left: 1030px;
     text-decoration: none;
     color: black;
+    float: right;
 }
 #link1{
     text-decoration: none;
     color: black;
+    float: left;
 }
 .img{
     border: none;
@@ -120,10 +125,10 @@ body{
 .b a:hover {
     color: white;
   }
- /* .key{
-    margin: 20px;
-    text-align: end;
- } */
+  .non{
+    margin-left: 100px;
+    text-align: start;
+ } 
 
  .login{
     text-align: center;
@@ -140,7 +145,7 @@ body{
     margin-bottom: 15px;
   }
   .form-groups label {
-     margin-right: 10px; 
+     margin-right: 20px; 
     min-width: 100px;
     text-align: end; 
     font-weight: 400;
@@ -148,8 +153,10 @@ body{
   }
   .form-groups input {
      flex: 1;
+     align-items: end;
     width: 500px;
     height: 3%;
+
     
   }
   .form-select option{
@@ -175,10 +182,15 @@ body{
 select:hover{
     border-color: #ADFF2F;
   }
- #inputState1{
-    margin-left: 10px;
+ .bob{
+  margin-left: 00px;
+  text-align: end;
+  align-items: end;
  }
- #inputState2{
-    margin-left: 10px;
+ .cards{
+  background-color: white;
+  border: none;
+  padding-bottom: 40px;
  }
+ 
 

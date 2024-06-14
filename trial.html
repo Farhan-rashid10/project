@@ -1,96 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="css/bootstrap.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Form Alignment</title>
+<style>
+  .form-container {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  .form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  .form-group label {
+    flex: 0 0 150px;
+    text-align: right;
+    margin-right: 10px;
+  }
+  .form-group input, .form-group select {
+    flex: 1;
+  }
+  .form-group .row {
+    flex: 1;
+  }
+  .row > div {
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+</style>
 </head>
 <body>
-  <div class="row">
-    <div class="col-4">
-      <nav id="navbar-example3" class="h-100 flex-column align-items-stretch pe-4 border-end">
-        <nav class="nav nav-pills flex-column">
-          <a class="nav-link" href="#item-1">Item 1</a>
-          <nav class="nav nav-pills flex-column">
-            <a class="nav-link ms-3 my-1" href="#item-1-1">Item 1-1</a>
-            <a class="nav-link ms-3 my-1" href="#item-1-2">Item 1-2</a>
-          </nav>
-          <a class="nav-link" href="#item-2">Item 2</a>
-          <a class="nav-link" href="#item-3">Item 3</a>
-          <nav class="nav nav-pills flex-column">
-            <a class="nav-link ms-3 my-1" href="#item-3-1">Item 3-1</a>
-            <a class="nav-link ms-3 my-1" href="#item-3-2">Item 3-2</a>
-          </nav>
-        </nav>
-      </nav>
-    </div>
-  
-    <div class="col-8">
-      <div data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-smooth-scroll="true" class="scrollspy-example-2" tabindex="0">
-        <div id="item-1">
-          <h4>Item 1</h4>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae beatae dolorum totam sequi, sint voluptas earum quam est molestias quisquam nemo doloremque et asperiores, eius dolor necessitatibus autem voluptatem cupiditate?</p>
-        </div>
-        <div id="item-1-1">
-          <h5>Item 1-1</h5>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae beatae dolorum totam sequi, sint voluptas earum quam est molestias quisquam nemo doloremque et asperiores, eius dolor necessitatibus autem voluptatem cupiditate?</p>
-        </div>
-        <div id="item-1-2">
-          <h5>Item 1-2</h5>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae beatae dolorum totam sequi, sint voluptas earum quam est molestias quisquam nemo doloremque et asperiores, eius dolor necessitatibus autem voluptatem cupiditate?</p>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae beatae dolorum totam sequi, sint voluptas earum quam est molestias quisquam nemo doloremque et asperiores, eius dolor necessitatibus autem voluptatem cupiditate?</p>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae beatae dolorum totam sequi, sint voluptas earum quam est molestias quisquam nemo doloremque et asperiores, eius dolor necessitatibus autem voluptatem cupiditate?</p>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae beatae dolorum totam sequi, sint voluptas earum quam est molestias quisquam nemo doloremque et asperiores, eius dolor necessitatibus autem voluptatem cupiditate?</p>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae beatae dolorum totam sequi, sint voluptas earum quam est molestias quisquam nemo doloremque et asperiores, eius dolor necessitatibus autem voluptatem cupiditate?</p>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae beatae dolorum totam sequi, sint voluptas earum quam est molestias quisquam nemo doloremque et asperiores, eius dolor necessitatibus autem voluptatem cupiditate?</p>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae beatae dolorum totam sequi, sint voluptas earum quam est molestias quisquam nemo doloremque et asperiores, eius dolor necessitatibus autem voluptatem cupiditate?</p>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae beatae dolorum totam sequi, sint voluptas earum quam est molestias quisquam nemo doloremque et asperiores, eius dolor necessitatibus autem voluptatem cupiditate?</p>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae beatae dolorum totam sequi, sint voluptas earum quam est molestias quisquam nemo doloremque et asperiores, eius dolor necessitatibus autem voluptatem cupiditate?</p>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae beatae dolorum totam sequi, sint voluptas earum quam est molestias quisquam nemo doloremque et asperiores, eius dolor necessitatibus autem voluptatem cupiditate?</p>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae beatae dolorum totam sequi, sint voluptas earum quam est molestias quisquam nemo doloremque et asperiores, eius dolor necessitatibus autem voluptatem cupiditate?</p>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae beatae dolorum totam sequi, sint voluptas earum quam est molestias quisquam nemo doloremque et asperiores, eius dolor necessitatibus autem voluptatem cupiditate?</p>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae beatae dolorum totam sequi, sint voluptas earum quam est molestias quisquam nemo doloremque et asperiores, eius dolor necessitatibus autem voluptatem cupiditate?</p>
-
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae beatae dolorum totam sequi, sint voluptas earum quam est molestias quisquam nemo doloremque et asperiores, eius dolor necessitatibus autem voluptatem cupiditate?</p>
-        </div>
-        <div id="item-2">
-          <h4>Item 2</h4>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae beatae dolorum totam sequi, sint voluptas earum quam est molestias quisquam nemo doloremque et asperiores, eius dolor necessitatibus autem voluptatem cupiditate?</p>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae beatae dolorum totam sequi, sint voluptas earum quam est molestias quisquam nemo doloremque et asperiores, eius dolor necessitatibus autem voluptatem cupiditate?</p>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae beatae dolorum totam sequi, sint voluptas earum quam est molestias quisquam nemo doloremque et asperiores, eius dolor necessitatibus autem voluptatem cupiditate?</p>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae beatae dolorum totam sequi, sint voluptas earum quam est molestias quisquam nemo doloremque et asperiores, eius dolor necessitatibus autem voluptatem cupiditate?</p>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae beatae dolorum totam sequi, sint voluptas earum quam est molestias quisquam nemo doloremque et asperiores, eius dolor necessitatibus autem voluptatem cupiditate?</p>
-
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae beatae dolorum totam sequi, sint voluptas earum quam est molestias quisquam nemo doloremque et asperiores, eius dolor necessitatibus autem voluptatem cupiditate?</p>
-        </div>
-        <div id="item-3">
-          <h4>Item 3</h4>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae beatae dolorum totam sequi, sint voluptas earum quam est molestias quisquam nemo doloremque et asperiores, eius dolor necessitatibus autem voluptatem cupiditate?</p>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae beatae dolorum totam sequi, sint voluptas earum quam est molestias quisquam nemo doloremque et asperiores, eius dolor necessitatibus autem voluptatem cupiditate?</p>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae beatae dolorum totam sequi, sint voluptas earum quam est molestias quisquam nemo doloremque et asperiores, eius dolor necessitatibus autem voluptatem cupiditate?</p>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae beatae dolorum totam sequi, sint voluptas earum quam est molestias quisquam nemo doloremque et asperiores, eius dolor necessitatibus autem voluptatem cupiditate?</p>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae beatae dolorum totam sequi, sint voluptas earum quam est molestias quisquam nemo doloremque et asperiores, eius dolor necessitatibus autem voluptatem cupiditate?</p>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae beatae dolorum totam sequi, sint voluptas earum quam est molestias quisquam nemo doloremque et asperiores, eius dolor necessitatibus autem voluptatem cupiditate?</p>
-        </div>
-        <div id="item-3-1">
-          <h5>Item 3-1</h5>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae beatae dolorum totam sequi, sint voluptas earum quam est molestias quisquam nemo doloremque et asperiores, eius dolor necessitatibus autem voluptatem cupiditate?</p>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae beatae dolorum totam sequi, sint voluptas earum quam est molestias quisquam nemo doloremque et asperiores, eius dolor necessitatibus autem voluptatem cupiditate?</p>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae beatae dolorum totam sequi, sint voluptas earum quam est molestias quisquam nemo doloremque et asperiores, eius dolor necessitatibus autem voluptatem cupiditate?</p>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae beatae dolorum totam sequi, sint voluptas earum quam est molestias quisquam nemo doloremque et asperiores, eius dolor necessitatibus autem voluptatem cupiditate?</p>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae beatae dolorum totam sequi, sint voluptas earum quam est molestias quisquam nemo doloremque et asperiores, eius dolor necessitatibus autem voluptatem cupiditate?</p>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae beatae dolorum totam sequi, sint voluptas earum quam est molestias quisquam nemo doloremque et asperiores, eius dolor necessitatibus autem voluptatem cupiditate?</p>
-
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae beatae dolorum totam sequi, sint voluptas earum quam est molestias quisquam nemo doloremque et asperiores, eius dolor necessitatibus autem voluptatem cupiditate?</p>
-        </div>
-        <div id="item-3-2">
-          <h5>Item 3-2</h5>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae beatae dolorum totam sequi, sint voluptas earum quam est molestias quisquam nemo doloremque et asperiores, eius dolor necessitatibus autem voluptatem cupiditate?</p>
-        </div>
+<div class="form-container">
+  <div class="form-group">
+    <label for="title">Title:</label>
+    <select class="form-select" id="title" aria-label="Title select example">
+      <option selected></option>
+      <option value="1">Mr</option>
+      <option value="2">Mrs</option>
+      <option value="3">Ms</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="first-name">First name:</label>
+    <input type="text" id="first-name" required> 
+  </div>
+  <div class="form-group">
+    <label for="middle-name">Middle name:</label>
+    <input type="text" id="middle-name" required>
+  </div>
+  <div class="form-group">
+    <label for="surname">Surname:</label>
+    <input type="text" id="surname" required>
+  </div>
+  <div class="form-group">
+    <label for="email">Email:</label>
+    <input type="email" id="email" required>
+  </div>
+  <div class="form-group">
+    <label for="phone-number">Phone number:</label>
+    <input type="number" id="phone-number" required>
+  </div>
+  <div class="form-group">
+    <label for="dob-day">Date of birth:</label>
+    <div class="row">
+      <div class="col-4">
+        <select id="dob-day" class="form-select" aria-label="Day select">
+          <option selected></option>
+          <!-- Days 1-31 options -->
+          ${[...Array(31).keys()].map(i => `<option value="${i+1}">${i+1}</option>`).join('')}
+        </select>
+      </div>
+      <div class="col-4">
+        <select id="dob-month" class="form-select" aria-label="Month select">
+          <option selected></option>
+          <option value="1">January</option>
+          <option value="2">February</option>
+          <option value="3">March</option>
+          <option value="4">April</option>
+          <option value="5">May</option>
+          <option value="6">June</option>
+          <option value="7">July</option>
+          <option value="8">August</option>
+          <option value="9">September</option>
+          <option value="10">October</option>
+          <option value="11">November</option>
+          <option value="12">December</option>
+        </select>
+      </div>
+      <div class="col-4">
+        <select id="dob-year" class="form-select" aria-label="Year select">
+          <option selected></option>
+          <!-- Years range from 1900 to current year -->
+          ${[...Array(new Date().getFullYear() - 1899).keys()].map(i => `<option value="${1900 + i}">${1900 + i}</option>`).join('')}
+        </select>
       </div>
     </div>
   </div>
+  <div class="form-group">
+    <label for="gender">Gender:</label>
+    <select class="form-select" id="gender" aria-label="Gender select example">
+      <option selected>select</option>
+      <option value="1">Male</option>
+      <option value="2">Female</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="nationality">Nationality:</label>
+    <input type="text" id="nationality" required>
+  </div>
+  <div class="form-group">
+    <label for="birth-place">Place of birth:</label>
+    <input type="text" id="birth-place" required>
+  </div>
+  <div class="form-group">
+    <label for="residence-place">Place of residence:</label>
+    <input type="text" id="residence-place" required>
+  </div>
+  <div class="form-group">
+    <label for="previous-application">Have you previously applied to or studied with us:</label>
+    <input type="text" id="previous-application" required>
+  </div>
+</div>
 </body>
 </html>
