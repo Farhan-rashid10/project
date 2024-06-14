@@ -2,17 +2,21 @@
 header{
     background-color: green;
 }
+body{
+    font-style: 300;
+    font-style: oblique;
+}
 .button{
-    width: 15%;
+    width: 20%;
     text-align: center;
     align-items: center;
-    margin-left: 500px;
+    margin-left: 300px;
     margin-top: 5px;
     margin-bottom: 10px;
     
 }
 .button a{
-    font-size: x-large;
+    font-size: large;
     text-decoration: none;
     color: green;
 }
@@ -30,7 +34,7 @@ header{
     
 }
 #link{
-    margin-left: 1650px;
+    margin-left: 1030px;
     text-decoration: none;
     color: black;
 }
@@ -48,13 +52,13 @@ header{
 
  .form-group input{
     width: 100%;
-    padding: 5px;
     box-sizing: border-box;
     text-align: center;
 }
 .row{
     margin-top: 10px;
 }
+
 .n{
     text-align: left;
     background-color: 	#ADFF2F;
@@ -62,6 +66,9 @@ header{
     color: black;
     margin: 0;
 }
+/* .card{
+    
+} */
 
 .click{
     background-color: green;
@@ -88,10 +95,9 @@ header{
     text-align: center;
 }
 .form-containerb .form-group input{
-    width: 100%;
-    padding: 5px;
+    width: 400px;
     box-sizing: border-box;
-    text-align: center;
+    text-align: start;
 }
 .form-container {
     display: flex;
@@ -99,7 +105,7 @@ header{
     text-align: center;
 }
 .form-containerb {
-    margin-left: 400px;
+    margin-left: 180px;
 }
 .b{
     margin-left: 200px;
@@ -134,14 +140,45 @@ header{
     margin-bottom: 15px;
   }
   .form-groups label {
-    margin: 0;
      margin-right: 10px; 
     min-width: 100px;
     text-align: end; 
-    font-weight: 100;
+    font-weight: 400;
+
   }
   .form-groups input {
      flex: 1;
     width: 500px;
+    height: 3%;
+    
   }
+  .form-select option{
+    font-weight: 200;
+  }
+  .p5{
+    padding: 50px;
+  }
+  .g{
+    text-align: left;
+  }
+  .g a{
+    text-decoration: none;
+    color: black;
+    margin: 10px;
+  }
+  input:hover{
+    border-color: #ADFF2F;
+  }
+  select option{
+    font-size: small;
+  }
+select:hover{
+    border-color: #ADFF2F;
+  }
+ #inputState1{
+    margin-left: 10px;
+ }
+ #inputState2{
+    margin-left: 10px;
+ }
 
