@@ -1,127 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Form Alignment</title>
-<style>
-  .form-container {
-    max-width: 600px;
-    margin: 0 auto;
-  }
-  .form-group {
-    display: flex;
-    align-items: center;
-    margin-bottom: 15px;
-  }
-  .form-group label {
-    flex: 0 0 150px;
-    text-align: right;
-    margin-right: 10px;
-  }
-  .form-group input, .form-group select {
-    flex: 1;
-  }
-  .form-group .row {
-    flex: 1;
-  }
-  .row > div {
-    padding-right: 5px;
-    padding-left: 5px;
-  }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>application form</title>
+    <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="css/bootstrap.css">
 </head>
-<body>
-<div class="form-container">
-  <div class="form-group">
-    <label for="title">Title:</label>
-    <select class="form-select" id="title" aria-label="Title select example">
-      <option selected></option>
-      <option value="1">Mr</option>
-      <option value="2">Mrs</option>
-      <option value="3">Ms</option>
-    </select>
-  </div>
-  <div class="form-group">
-    <label for="first-name">First name:</label>
-    <input type="text" id="first-name" required> 
-  </div>
-  <div class="form-group">
-    <label for="middle-name">Middle name:</label>
-    <input type="text" id="middle-name" required>
-  </div>
-  <div class="form-group">
-    <label for="surname">Surname:</label>
-    <input type="text" id="surname" required>
-  </div>
-  <div class="form-group">
-    <label for="email">Email:</label>
-    <input type="email" id="email" required>
-  </div>
-  <div class="form-group">
-    <label for="phone-number">Phone number:</label>
-    <input type="number" id="phone-number" required>
-  </div>
-  <div class="form-group">
-    <label for="dob-day">Date of birth:</label>
-    <div class="row">
-      <div class="col-4">
-        <select id="dob-day" class="form-select" aria-label="Day select">
-          <option selected></option>
-          <!-- Days 1-31 options -->
-          ${[...Array(31).keys()].map(i => `<option value="${i+1}">${i+1}</option>`).join('')}
-        </select>
+<body style="background-color: lavenderblush;">
+  <header class=" text-light header">
+    <nav class="navbar p5">
+        <div class="container-fluid p3">
+          <a class="navbar-brand text-light"><img src="download-removebg-preview.png" alt="" class="img"></a>
+          <form class="d-flex" role="search">
+            <h2>Your Application</h2>
+          </form>
+        </div>
+      </nav>
+</header>
+    <div class="click">
+        <p>logged in:</p>
+        <h2 class="">Application From farhan For Garissa University</h2>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-8 justify-content-center">
+    <div class="accordion" id="accordionPanelsStayOpenExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+            personal detail
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+            <div class="col-8 justify-content-center">
+              <div class="cards justify-content-center">
+                <div class="cards">
+                  <div class="col-8">
+                    <h5>personal details</h5>
+                    <p>*please fill out this fields</p>
+                  </div>
+                 </div>
+            <div class="bob col-8 ">
+              <div class="form-groups">
+                <label for="">Title:</label>
+                <select class="form-select" aria-label="Default select example">
+                  <option selected></option>
+                  <option value="2">Mr</option>
+                  <option value="2">Mrs</option>
+                  <option value="3">Ms</option>
+                </select>
+              </div>
+              <div class="form-groups">
+                <label for="">First name:</label>
+                <input type="text" required> 
+              </div>
+              <div class="form-groups">
+                <label for="">Middle name:</label>
+                <input type="text" required>
+              </div>
+              <div class="form-groups">
+                <label for="">Surname:</label>
+                <input type="text" required>
+              </div>
+              <div class="form-groups">
+                <label for="">Email:</label>
+                <input type="email" required>
+              </div>
+              <div class="form-groups">
+                <label for="">Phone number:</label>
+                <input type="number" required>
+              </div>
+              <div class="form-groups">
+                <label for="">Date of birth:</label>
+                <input type="date" required>
+               </div>
+               <div class="form-groups">
+                <label for="">Gender:</label>
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>select</option>
+                  <option value="2">Male</option>
+                  <option value="3">Female</option>
+                </select>
+              </div>
+              <div class="form-groups">
+                <label for="">Nationality:</label>
+                <input type="text" required>
+              </div>
+              <div class="form-groups">
+                <label for="">Place of birth:</label>
+                <input type="text" required>
+              </div>
+              <div class="form-groups">
+                <label for="">Place of resedence:</label>
+                <input type="text" required>
+              </div>
+              <div class="form-groups">
+                <label for="">How long have you been here:</label>
+                <input type="text" required>
+              </div>
+              <div class="form-groups">
+                <label for="">have you previously applied to or studied <br> with us :</label>
+                <input type="text" required>
+              </div>
+              
+        
+              
+                
+             
+              </div> 
+           </div>
+        </div>
       </div>
-      <div class="col-4">
-        <select id="dob-month" class="form-select" aria-label="Month select">
-          <option selected></option>
-          <option value="1">January</option>
-          <option value="2">February</option>
-          <option value="3">March</option>
-          <option value="4">April</option>
-          <option value="5">May</option>
-          <option value="6">June</option>
-          <option value="7">July</option>
-          <option value="8">August</option>
-          <option value="9">September</option>
-          <option value="10">October</option>
-          <option value="11">November</option>
-          <option value="12">December</option>
-        </select>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+            Accordion Item #2
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+          <div class="accordion-body">
+            <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+          </div>
+        </div>
       </div>
-      <div class="col-4">
-        <select id="dob-year" class="form-select" aria-label="Year select">
-          <option selected></option>
-          <!-- Years range from 1900 to current year -->
-          ${[...Array(new Date().getFullYear() - 1899).keys()].map(i => `<option value="${1900 + i}">${1900 + i}</option>`).join('')}
-        </select>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+            Accordion Item #3
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+          <div class="accordion-body">
+            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="form-group">
-    <label for="gender">Gender:</label>
-    <select class="form-select" id="gender" aria-label="Gender select example">
-      <option selected>select</option>
-      <option value="1">Male</option>
-      <option value="2">Female</option>
-    </select>
-  </div>
-  <div class="form-group">
-    <label for="nationality">Nationality:</label>
-    <input type="text" id="nationality" required>
-  </div>
-  <div class="form-group">
-    <label for="birth-place">Place of birth:</label>
-    <input type="text" id="birth-place" required>
-  </div>
-  <div class="form-group">
-    <label for="residence-place">Place of residence:</label>
-    <input type="text" id="residence-place" required>
-  </div>
-  <div class="form-group">
-    <label for="previous-application">Have you previously applied to or studied with us:</label>
-    <input type="text" id="previous-application" required>
-  </div>
-</div>
+    </div>
+  </div>  
+
+    <script src="js/bootstrap.js"></script>
+
 </body>
 </html>
