@@ -57,6 +57,7 @@ body{
 }
 
 
+
  .form-group input{
     width: 100%;
     box-sizing: border-box;
@@ -103,6 +104,8 @@ body{
     width: 400px;
     box-sizing: border-box;
     text-align: start;
+    font-size: medium;
+
 }
 .form-container {
     display: flex;
@@ -158,10 +161,23 @@ body{
      align-items: left;
      float: right;
     width: 380px;
-    height: 3%;
+    height: 30px;
     margin-top: 10px;
+    font-size: medium;
+    font-weight: 300;
+
 
     
+  }
+  .form-groups textarea{
+    flex: 1;
+    align-items: left;
+    float: right;
+   width: 380px;
+   height: 100px;
+   margin-bottom: 40px;
+   font-size: medium;
+   font-weight: 300;
   }
   .form-groups select {
     flex: 1;
@@ -170,6 +186,9 @@ body{
    width: 380px;
    height: 3%;
    margin-top: 10px;
+   font-size: medium;
+   font-weight: 300;
+
   }
   .form-select option{
     font-weight: 200;
@@ -231,6 +250,22 @@ select:hover{
  color: red;
  float: right;
  
+}
+#vok{
+  text-align: center;
+}
+ 
+.form-check h6{
+  margin-right: 105px;  
+  text-align: right; 
+  float: left;
+
+}
+.form-check input{  
+width: 18px;
+border-color: black;
+  margin-top: 10px;
+
 }
 
 
