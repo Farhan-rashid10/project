@@ -5,6 +5,108 @@
       "fullName": "Farhan Rashid Abdi",
       "email": "farkaf07@gmail.com",
       "password": "1234"
+    },
+    {
+      "id": "6615",
+      "fullName": "ssss",
+      "email": "farkaf07@gmail.com",
+      "password": "1234",
+      "First": "The Good, the Bad and the Ugly",
+      "Last": "ABDI",
+      "Password": "R",
+      "Confirm": "29 Dec 1967",
+      "Email": "178 min",
+      "Surname": "Adventure, Western"
+    },
+    {
+      "id": "7998",
+      "fName": "farka",
+      "lName": "Abdi",
+      "surname": "f07",
+      "email": "farkaf07@gmail.com",
+      "password": "12345"
+    },
+    {
+      "id": "fa75",
+      "fName": "farka",
+      "lName": "Abdi",
+      "surname": "f07",
+      "email": "farkaf07@gmail.com",
+      "password": "H23"
+    },
+    {
+      "id": "02b6",
+      "fullName": "Farhan Rashid Abdi",
+      "email": "farkaf07@gmail.com",
+      "password": "234"
+    },
+    {
+      "id": "c1c6",
+      "fullName": "cadbi billow",
+      "email": "farkaf07@gmail.com",
+      "password": "1234"
+    },
+    {
+      "id": "69cc",
+      "fName": "farka",
+      "lName": "Abdi",
+      "surname": "f07",
+      "email": "farkaf07@gmail.com",
+      "password": "mnb"
+    },
+    {
+      "id": "fd3a",
+      "fName": "farka",
+      "lName": "foyu",
+      "surname": "f07",
+      "email": "farkaf07@gmail.com",
+      "password": "12345"
+    },
+    {
+      "id": "49d3",
+      "fName": "vui",
+      "lName": "vde",
+      "surname": "f07",
+      "email": "farkaf07@gmail.com",
+      "password": "567"
+    },
+    {
+      "id": "2f82",
+      "fName": "ali",
+      "lName": "issack",
+      "surname": "fuj",
+      "email": "farkaf07@gmail.com",
+      "password": "1234"
+    },
+    {
+      "id": "399d",
+      "fName": "farka",
+      "lName": "rashid",
+      "surname": "f07",
+      "email": "farkaf07@gmail.com",
+      "password": "444"
+    },
+    {
+      "id": "309e",
+      "fName": "farka",
+      "lName": "f07",
+      "surname": "rashid",
+      "email": "farkaf07@gmail.com",
+      "county": "xzxzzzzz",
+      "Number": "0769352947",
+      "birth": "2024-06-11",
+      "residence": "zzzzz",
+      "nationality": "xzz",
+      "applied": "ddss",
+      "disable": "sxsxsx",
+      "living": "zzzzz"
     }
+  ],
+
+
+
+  "update": [
+
+    
   ]
 }

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+<body>
+    <header class="text-light header">
+        <nav class="navbar p5">
+            <div class="container-fluid p5">
+                <a class="navbar-brand text-light">
+                    <img src="download-removebg-preview.png" alt="" class="img">
+                </a>
+                <form class="d-flex" role="search">
+                    <h2>Your Application</h2>
+                </form>
+            </div>
+        </nav>
+    </header>
+    <section class="p">
+        <a href="#" id="link1">logged in:</a>
+        <a href="#" id="link">|select courses|</a>
+    </section>
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-6 card sign1">
+                <h4 class="n">Create Account</h4>
+                <form action="index.html" id="register">
+                    <div class="form-container">
+                        <div class="form-group">
+                            <label for="firstName" class="form-label">First Name</label>
+                            <input type="text" required id="firstName" placeholder="First Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="surname" class="form-label">Surname</label>
+                            <input type="text"  required id="surname" placeholder="Surname">
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName" class="form-label">Last Name</label>
+                            <input type="text"  required id="lastName" placeholder="Last Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="password" class="form-label">Password</label>
+                            <input type="password" required id="password" placeholder="Create Password">
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email Address</label>
+                            <input type="email"  required id="email" placeholder="Email Address">
+                        </div>
+                        <div class="form-group">
+                            <label for="confirm" class="form-label">Confirm Password</label>
+                            <input type="password" required id="confirm" placeholder="Confirm Password">
+                        </div>
+                        <div class="mx-auto mt-4 mb-5">
+                            <button type="submit" class="btn-lg btn btn-outline-success h">Sign Up</button>
+                        </div>
+            </div>
+        </form>
+            </div>
+        </div>
+
+        <h1>Login</h1>
+        <form id="login">
+            <label for="loginUsername">Username or Phone Number:</label>
+            <input type="text" placeholder="Username or Phone Number" id="loginUsername" required>
+            <label for="loginPassword">Password:</label>
+            <input type="password" placeholder="Password" id="loginPassword" required>
+            <button type="submit">Login</button>
+        </form>
+        <script src="index.js"></script>
+
+</body>
+</html>

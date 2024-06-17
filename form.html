@@ -82,7 +82,8 @@
                 let username = loginForm.querySelector('input[placeholder="Username or Phone Number"]').value;
                 let password = loginForm.querySelector('input[placeholder="Password"]').value;
 
-                fetch("http://localhost:3000/singUp")
+                fetch("http://localhost:3000/singUp" )
+                                     
                     .then(response => response.json())
                     .then(users => {
                         const user = users.find(user => user.email === username && user.password === password);

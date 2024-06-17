@@ -56,44 +56,44 @@
                 <p>*please fill out this fields</p>
               </div>
              </div>
-
+           <form action="" id="register">
           <div class="bob col-8 justify-content-center">
       <div class="form-groups">
         <label for="">Title:</label>
         <select class="form-select" aria-label="Default select example">
-          <option selected></option>
+          <option selected placeholder="title"></option>
           <option value="2">Mr</option>
           <option value="2">Mrs</option>
           <option value="3">Ms</option>
         </select>
       </div>
       <div class="form-groups">
-        <label for="">First name:</label>
-        <input type="text" required> 
-      </div>
+        <label for="firstName" class="form-label">First Name</label>
+        <input type="text" required id="firstName" placeholder="First Name">
+    </div>
+    <div class="form-groups">
+      <label for="lastName" class="form-label">Last Name</label>
+      <input type="text"  required id="lastName" placeholder="Last Name">
+  </div>
       <div class="form-groups">
-        <label for="">Middle name:</label>
-        <input type="text" required>
-      </div>
+        <label for="surname" class="form-label">Surname</label>
+        <input type="text"  required id="surname" placeholder="Surname">
+    </div>
       <div class="form-groups">
-        <label for="">Surname:</label>
-        <input type="text" required>
-      </div>
-      <div class="form-groups">
-        <label for="">Email:</label>
-        <input type="email" required>
+        <label for="email" class="form-label">Email Address</label>
+        <input type="email"  required id="email" placeholder="Email Address">
       </div>
       <div class="form-groups">
         <label for="">Phone number:</label>
-        <input type="number" required>
+        <input type="number" required placeholder="number">
       </div>
       <div class="form-groups">
         <label for="">Date of birth:</label>
-        <input type="date" required>
+        <input type="date" required placeholder="birth">
        </div>
        <div class="form-groups">
         <label for="">Gender:</label>
-        <select class="form-select" aria-label="Default select example">
+        <select class="form-select" aria-label="Default select example" placeholder="gender">
           <option selected>select</option>
           <option value="2">Male</option>
           <option value="3">Female</option>
@@ -101,23 +101,23 @@
       </div>
       <div class="form-groups">
         <label for="">Nationality:</label>
-        <input type="text" required>
+        <input type="text" required placeholder="nationality">
       </div>
       <div class="form-groups">
         <label for="">Place of birth:</label>
-        <input type="text" required>
+        <input type="text" required placeholder="county">
       </div>
       <div class="form-groups">
         <label for="">Place of resedence:</label>
-        <input type="text" required>
+        <input type="text" required placeholder="where you live">
       </div>
       <div class="form-groups">
         <label for="">How long have you been here:</label>
-        <input type="text" required>
+        <input type="text" required placeholder="years your living">
       </div>
       <div class="form-groups">
         <label for="">have you previously applied to or studied <br> with us :</label>
-        <input type="text" required>
+        <input type="text" required placeholder="studied or applied">
       </div>
       
 
@@ -131,6 +131,8 @@
         </div>
       </div>
      </div>
+       <button type="submit" class="btn-lg btn btn-outline-success button" style="text-align: center;">Continue</button>
+    </form>
 
 
      
@@ -158,8 +160,7 @@
 
 
     
-
+<script src="index.js"></script>
       
-      <script src="js/bootstrap.js"></script>
 </body>
 </html>

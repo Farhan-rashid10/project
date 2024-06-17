@@ -30,28 +30,37 @@
             <h5>login</h5>
             <p>To start a new application please click on New User and complete the registration form to create your account. Once you have registered, you will be able to submit and manage your application.</p>
             <div class="d-grid gap-2 col-6 mx-auto"></div>
-          <button class=" button justify-content-center" type="button"> <a href="form.html" class=" text-center">New User</a></button>
+          <button class=" button justify-content-center" type="button"> <a href="forms.html" class=" text-center">New User</a></button>
           <p>If you have already created your application account and are returning to complete or submit a further application, please enter your account details below.</p>
-          <form action="" method="get">
+          <!-- <form action="" id="login">
           <div class="form-containerb">
             <div class="form-group">
             <label for="exampleFormControlInput1" class="form-label">Email address</label>
-            <input type="email"  placeholder="Enter your email here" required>
-            <div id="validationServerUsernameFeedback" class="invalid-feedback">
-              Please choose an email.
-            </div>
+            <input type="email"  placeholder="email" required>
+           
           </div>
           <div class="form-group">
             <label for="exampleFormControlInput1" class="form-label">password</label>
-            <input type="password"  placeholder="Enter your password here" required>
-            <div id="validationServerUsernameFeedback" class="invalid-feedback">
-              Please choose a password.
-            </div>
+            <input type="password"  placeholder="password" required>
+           
           </div>
         </div>
-          <button type="button" class=" button"><a href="application.html">login</a></button>
+          <button type="submit" class=" button">login</button> -->
+            <!-- <a href="application.html">login</a> -->
           
-        </form>
+          
+            <form id="login">
+              <label for="loginUsername">Username or Phone Number:</label>
+              <input type="text" placeholder="Username or Phone Number" id="loginUsername" required>
+              <label for="loginPassword">Password:</label>
+              <input type="password" placeholder="Password" id="loginPassword" required>
+              <button type="submit">Login</button>
+          </form>
+
+
+
+
+
        </div>
         </div>
         
@@ -86,7 +95,6 @@
 
 
 
-
-    <script src="js/bootstrap.js"></script>
+    <script src="index.js"></script>
 </body>
 </html>

@@ -1,4 +1,4 @@
- document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function() {
     const registerForm = document.getElementById('register');
     const loginForm = document.getElementById('login');
 
@@ -11,7 +11,15 @@
         let email = registerForm.querySelector('input[placeholder="Email Address"]').value;
         let password = registerForm.querySelector('input[placeholder="Create Password"]').value;
         let confirmPassword = registerForm.querySelector('input[placeholder="Confirm Password"]').value;
-
+        let title = registerForm.querySelector('input[placeholder="title"]').value;
+        let county = registerForm.querySelector('input[placeholder="county"]').value;
+        let phone = registerForm.querySelector('input[placeholder="number"]').value;
+        let birth = registerForm.querySelector('input[placeholder="birth"]').value;
+        let residence = registerForm.querySelector('input[placeholder="where you live"]').value;
+        let nationality = registerForm.querySelector('input[placeholder="nationality"]').value;
+        let applied = registerForm.querySelector('input[placeholder="studied or applied"]').value;
+        let disable = registerForm.querySelector('input[placeholder="please specify"]').value;
+        let living = registerForm.querySelector('input[placeholder="years your living"]').value;
 
         if (password !== confirmPassword) {
             alert('Passwords do not match!');
@@ -23,8 +31,16 @@
             lName: lName,
             surname: surname,
             email: email,
-            password:password
-          
+            password:password,
+            title: title,
+            county: county,
+            Number: phone,
+            birth: birth,
+            residence: residence,
+            nationality: nationality,
+            applied: applied,
+            disable: disable,
+            living: living
 
         };
 
@@ -40,49 +56,7 @@
             alert('Registration successful!');
             registerForm.reset();
         })
-    }
-      
-
-
-    function patch(e){
-        e.preventDefault()
-
-        let title = registerForm.querySelector('input[placeholder="title"]').value;
-        let county = registerForm.querySelector('input[placeholder="county"]').value;
-        let phone = registerForm.querySelector('input[placeholder="number"]').value;
-        let birth = registerForm.querySelector('input[placeholder="birth"]').value;
-        let residence = registerForm.querySelector('input[placeholder="where you live"]').value;
-        let nationality = registerForm.querySelector('input[placeholder="nationality"]').value;
-        let applied = registerForm.querySelector('input[placeholder="studied or applied"]').value;
-        let disable = registerForm.querySelector('input[placeholder="please specify"]').value;
-        let living = registerForm.querySelector('input[placeholder="years your living"]').value;
-
-
-
-        const noobject = {
-            title: title,
-            county: county,
-            Number: phone,
-            birth: birth,
-            residence: residence,
-            nationality: nationality,
-            applied: applied,
-            disable: disable,
-            living: living
-
-        }
-        fetch("http://localhost:3000/update", {
-            method: "PATCH",
-            headers: {
-                "Content-Type": "application/json"
-            },
-            body: JSON.stringify(noobject)
-        })
-        .then(response => response.json())
-        .then(data => {
-            alert('Registration successful!');
-            registerForm.reset();
-        })
+        .catch(error => console.error('Error:', error));
     }
 
     // function loginUser(event) {
