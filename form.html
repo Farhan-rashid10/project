@@ -3,107 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>sign up</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="css/bootstrap.css">
+    <title>Sign Up and Login</title>
+    <style>
+        form {
+            margin-bottom: 20px;
+        }
+        label, input {
+            display: block;
+            margin-bottom: 10px;
+        }
+    </style>
 </head>
 <body>
-  <header class=" text-light header">
-    <nav class="navbar p5">
-        <div class="container-fluid p5">
-          <a class="navbar-brand text-light"><img src="download-removebg-preview.png" alt="" class="img"></a>
-          <form class="d-flex" role="search">
-            <h2>Your Application</h2>
-          </form>
-        </div>
-      </nav>
-</header>
-    <section class="p">
-        <a href="#" id="link1">logged in:</a>
-    <a href="#" id="link">|select courses|</a>
-    </section>
-    <div class="container-fluid">
-        <div class="row justify-content-center">
-            <div class="col-6 card sign1">
-              <h4 class="n">create account</h4>
-              <form action="">
-              <div class="form-container">
-                <div class="form-group">
-                    <label for="exampleFormControlInput1" class="form-label">First name</label>
-                    <input type="text"  placeholder="First name" required id="firstName">
-                  </div>
+    <h1>Sign Up</h1>
+    <form id="register">
+        <label for="fullName">Full Name:</label>
+        <input type="text" placeholder="Full Name" id="fullName" required>
+        <label for="email">Email Address:</label>
+        <input type="email" placeholder="Email Address" id="email" required>
+        <label for="createPassword">Create Password:</label>
+        <input type="password" placeholder="Create Password" id="createPassword" required>
+        <label for="confirmPassword">Confirm Password:</label>
+        <input type="password" placeholder="Confirm Password" id="confirmPassword" required>
+        <button type="submit">Sign Up</button>
+    </form>
 
-                  <div class="form-group">
-                    <label for="exampleFormControlInput1" class="form-label">Surname</label>
-                    <input type="text"  placeholder="Username" required id="surname">
-                  </div>
+    <h1>Login</h1>
+    <form id="login">
+        <label for="loginUsername">Username or Phone Number:</label>
+        <input type="text" placeholder="Username or Phone Number" id="loginUsername" required>
+        <label for="loginPassword">Password:</label>
+        <input type="password" placeholder="Password" id="loginPassword" required>
+        <button type="submit">Login</button>
+    </form>
 
-                  <div class="form-group">
-                    <label for="exampleFormControlInput1" class="form-label">Last name</label>
-                    <input type="text"  placeholder="Last name" required id="lastName">
-                  </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const registerForm = document.getElementById('register');
+            const loginForm = document.getElementById('login');
 
-                  <div class="form-group">
-                    <label for="exampleFormControlInput1" class="form-label">Password</label>
-                    <input type="password"  placeholder="password" required id="password">
-                  </div>
-                  
-                    <div class="form-group">
-                    <label for="exampleFormControlInput1" class="form-label">Email address</label>
-                    <input type="email"  placeholder="email" required id="email">
-                  </div>
-                  
-                    <div class="form-group">
-                    <label for="exampleFormControlInput1" class="form-label">Confirm password</label>
-                    <input type="password"  placeholder="confirm password" required id="confirm">
-                  </div>
-                  
-                  <div class="mx-aut mt-4 mb-5">
-                  <button type="submit" class="btn-lg btn btn-outline-success h">sign up</button>
-                </div>
-                  
-           </div>
-          </form>
-      </div>
-    </div>
+            function registerUser(event) {
+                event.preventDefault();
 
-    <script >
-  document.querySelector("form").addEventListener("submit", adddetails);
+                let fullName = registerForm.querySelector('input[placeholder="Full Name"]').value;
+                let email = registerForm.querySelector('input[placeholder="Email Address"]').value;
+                let password = registerForm.querySelector('input[placeholder="Create Password"]').value;
+                let confirmPassword = registerForm.querySelector('input[placeholder="Confirm Password"]').value;
 
-  function adddetails(e) {
-      e.preventDefault();
-      console.log("submitted");
+                if (password !== confirmPassword) {
+                    alert('Passwords do not match!');
+                    return;
+                }
 
-      let fName = document.getElementById("firstName")
-      let lName = document.getElementById("lastName")
-      let password = document.getElementById("password")
-      let confirms = document.getElementById("confirm")
-      let email = document.getElementById("email")
-      let surname = document.getElementById("surname")
+                const userObject = {
+                    fullName: fullName,
+                    email: email,
+                    password: password
+                };
 
-      let object = {
-          First: fName.value,
-          Last: lName.value,
-          Password: password.value,
-          Confirm: confirms.value,
-          Email: email.value,
-          Surname: surname.va
-      };
+                fetch("http://localhost:3000/singUp", {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json"
+                    },
+                    body: JSON.stringify(userObject)
+                })
+                .then(response => response.json())
+                .then(data => {
+                    alert('Registration successful!');
+                    registerForm.reset();
+                })
+                .catch(error => console.error('Error:', error));
+            }
 
-      fetch('http://localhost:3000/singUp', {
-          method: 'POST',
-          headers: {
-              'Content-Type': 'application/json'
-          },
-          body: JSON.stringify(object)
-      })
-      .then(response => response.json())
-      .then(data => {
-          console.log('Success:', data);
-      })
-  }
+            function loginUser(event) {
+                event.preventDefault();
 
+                let username = loginForm.querySelector('input[placeholder="Username or Phone Number"]').value;
+                let password = loginForm.querySelector('input[placeholder="Password"]').value;
+
+                fetch("http://localhost:3000/singUp")
+                    .then(response => response.json())
+                    .then(users => {
+                        const user = users.find(user => user.email === username && user.password === password);
+                        if (user) {
+                            alert('Login successful!');
+                        } else {
+                            alert('Invalid credentials!');
+                        }
+                    })
+                    .catch(error => console.error('Error:', error));
+            }
+
+            registerForm.addEventListener('submit', registerUser);
+            loginForm.addEventListener('submit', loginUser);
+        });
     </script>
-
-  </body>
+</body>
 </html>

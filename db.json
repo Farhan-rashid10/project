@@ -1,23 +1,10 @@
 {
   "singUp": [
     {
-      "First": "The Good, the Bad and the Ugly",
-      "Last": "ABDI",
-      "Password": "R",
-      "Confirm": "29 Dec 1967",
-      "Email": "178 min",
-      "Surname": "Adventure, Western",
-      "id": "cda4"
-    },
-   
-    {
-      "id": "cd",
-      "First": "The Good, the Bad and the Ugly",
-      "Last": "ABDI",
-      "Password": "R",
-      "Confirm": "29 Dec 1967",
-      "Email": "178 min",
-      "Surname": "Adventure, Western"
+      "id": "6f73",
+      "fullName": "Farhan Rashid Abdi",
+      "email": "farkaf07@gmail.com",
+      "password": "1234"
     }
   ]
 }

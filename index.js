@@ -11,6 +11,7 @@ document.addEventListener("DOMContentLoaded", function() {
       let confirms = document.getElementById("confirm")
       let email = document.getElementById("email")
       let surname = document.getElementById("surname")
+  }
 
       let object = {
           First: fName.value,
@@ -32,7 +33,6 @@ document.addEventListener("DOMContentLoaded", function() {
       .then(data => {
           console.log('Success:', data);
       })
-  }
 });
 
 
