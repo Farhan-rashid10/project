@@ -20,12 +20,13 @@
 </header>
     <div class="click">
         <p>logged in:</p>
-        <h2 class="">Application From farhan For Garissa University</h2>
+        <h2 class="">Application Form For Garissa University</h2>
     </div>
-   <div class="containers row">
+    <center>
+         <div class="containers row justify-content-center">
     <div class="form-containers">
         <dvi class="row mx-auto">
-        <div class="col-3 mt-5 non">
+        <!-- <div class="col-3 mt-5 non">
           <div class="card g">
               <h6> Your application check list</h6>
 
@@ -46,26 +47,22 @@
           
           
           </div>
-        </div>
+        </div> -->
         
         <div class="col-8 justify-content-center">
           <div class="cards justify-content-center">
-            <div class="cards">
+            <div class="cards sm-12 md-12 lg-12">
               <div class="col-8">
                 <h5>personal details</h5>
                 <p>*please fill out this fields</p>
               </div>
              </div>
            <form action="" id="register">
-          <div class="bob col-8 justify-content-center">
+          <div class="bob col-8 justify-content-center sm-12 md-12 lg-12">
       <div class="form-groups">
         <label for="">Title:</label>
-        <select class="form-select" aria-label="Default select example">
-          <option selected placeholder="title"></option>
-          <option value="2">Mr</option>
-          <option value="2">Mrs</option>
-          <option value="3">Ms</option>
-        </select>
+        <input type="text"  required id="title" placeholder="title">
+
       </div>
       <div class="form-groups">
         <label for="firstName" class="form-label">First Name</label>
@@ -93,11 +90,8 @@
        </div>
        <div class="form-groups">
         <label for="">Gender:</label>
-        <select class="form-select" aria-label="Default select example" placeholder="gender">
-          <option selected>select</option>
-          <option value="2">Male</option>
-          <option value="3">Female</option>
-        </select>
+        <input type="text"  required id="gender" placeholder="gender">
+
       </div>
       <div class="form-groups">
         <label for="">Nationality:</label>
@@ -131,6 +125,122 @@
         </div>
       </div>
      </div>
+
+<!-- 2 -->
+<h5>Study details</h5>
+     <div class="bob col-8 ">
+        <div class="form-groups">
+         <label for="">Have you studied at a College or <br>University? *</label>
+         <input type="text" id="any" placeholder="College or University">
+       </div>
+       <div class="form-groups">
+         <label for="">if yes please fill here:</label>
+         <textarea name="" id="message" placeholder="write"></textarea>
+ 
+       </div>
+     </div>
+
+     <!-- 3 -->
+     <h3>Qualification</h3>
+     <h5>Primary</h5>
+     <div class="bob col-8 ">
+      <div class="form-groups">
+        <label for="">Name of the school</label>
+        <input type="text" required placeholder="primary school">
+      </div>
+      <div class="form-groups">
+        <label for=""> main grade</label>
+        <input type="text" required placeholder="primary grade">
+      </div>
+      <div class="form-groups">
+      
+          <label for="formFileLg" class="form-label">Upload your primary certificate</label>
+          <input class="form-control form-control-lg" id="formFileLg" type="file" required placeholder="primary certificate">
+    
+     </div>
+     </div>
+     <h5>Secondary</h5>
+     <div class="bob col-8">
+
+     <div class="form-groups">
+      <label for="">Name of the school</label>
+      <input type="text" required placeholder="secondary school">
+    </div>
+    <div class="form-groups">
+      <label for=""> main grade</label>
+      <input type="text" required placeholder="secondary grade">
+    </div>
+    <div class="form-groups">
+    
+        <label for="formFileLg" class="form-label">Upload your secondary certificate</label>
+        <input class="form-control form-control-lg" id="formFileLg" type="file" required placeholder="secondary certificate">
+  
+   </div>
+     
+   </div>
+   <h5>other documents</h5>
+   <div class="bob col-8">
+  <div class="form-groups">
+  
+      <label for="formFileLg" class="form-label">Upload if you have any other certificate</label>
+      <input class="form-control form-control-lg" id="formFileLg" type="file" placeholder="other document">
+
+ </div>
+   
+ </div>
+
+ <!-- 4 -->
+ <h3>Personal Statement</h3>
+ <p>All applicants are required to submit a personal statement as part of the application process. Please complete the following questions - your answers should be around 150-200 words each.</p>
+  
+
+ <div class="bob col-8">
+    <div class="form-groups">
+      <label for="">Why do you wish to study at Garissa <br> University? </label>
+      <textarea name="" id="wish" placeholder="wish"></textarea>
+    </div>
+    <div class="form-groups">
+     <label for="">How does this study form part of your <br>future career and goals?</label>
+     <textarea name="" id="career" placeholder="career"></textarea>
+   </div>
+   <div class="form-groups">
+     <label for="">Please explain, in detail, why you have <br>chosen this particular course and what, <br>upon completion, it will mean for your  <br>future career path?</label>
+     <textarea name="" id="course" placeholder="course"></textarea>
+   </div>
+   <div class="form-groups">
+     <label for="">Please identify the period of time since <br>completion of your last higher education <br>study.</label>
+     <input type="text"  required id="time" placeholder="period">
+
+   </div>
+  </div>
+
+  <!-- 5 -->
+  <h2>Main Sources of Funding</h2>
+  <p>Please indicate how you intend to fund your studies.</p>
+
+  <div class="bob col-8 ">
+    <div class="form-groups">
+      <Label>What is your likely source of funding?</Label>
+      <input type="text"  required id="funding" placeholder="funding">
+
+     </select>
+   </div>
+   
+ </div>
+
+ <!-- 6 -->
+
+ <h3>Your application and documents</h3>
+ <p>You will not be able to amend your application once submitted, so please take a little time to check through your application and each of the tabs for accuracy. Please also check you have uploaded the correct documents below:</p>
+<p>You have not uploaded any evidence</p>
+<p>Having checked through your application before submission please agree to the following statement:</p>
+
+<div class="form-check">
+<h6>I confirm that the information provided is to the <br>best of my knowledge accurate and complete*</h6>
+<input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+
+
+
        <button type="submit" class="btn-lg btn btn-outline-success button" style="text-align: center;">Continue</button>
     </form>
 
@@ -141,26 +251,44 @@
     </div>
     </dvi>
   </div>
+</center>
 
 
 
 
-  
-  
 
 
-    
-     
-   
-    
+
+  <footer class="footer">
+    <p>copyright &copy; 2024 all reserved</p>
+    <p>@gau.ac.ke</p>
+  </footer>
 
 
-     
-      
 
 
-    
-<script src="index.js"></script>
-      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="trial.js"></script>
+
 </body>
 </html>

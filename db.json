@@ -100,13 +100,64 @@
       "applied": "ddss",
       "disable": "sxsxsx",
       "living": "zzzzz"
+    },
+    {
+      "id": "08f2",
+      "fullName": "Farhan Rashid Abdi",
+      "email": "farkaf07@gmail.com",
+      "password": "ser"
+    },
+    {
+      "id": "fccf",
+      "fName": "farka",
+      "lName": "Abdi",
+      "surname": "f07",
+      "email": "farkaf07@gmail.com",
+      "password": "1234"
+    },
+    {
+      "id": "cb3c",
+      "fName": "farka",
+      "lName": "foyu",
+      "surname": "f07",
+      "email": "farkaf07@gmail.com",
+      "password": "1234"
     }
   ],
 
 
 
   "update": [
-
     
+   
+   
+    {
+      "id": "3809",
+      "title": "mn",
+      "fName": "farka",
+      "lName": "f07",
+      "surname": "f07",
+      "email": "farkaf07@gmail.com",
+      "county": "v",
+      "Number": "0769352947",
+      "birth": "2024-06-21",
+      "gender": "male",
+      "residence": "m",
+      "nationality": "nh",
+      "applied": "j",
+      "disable": "v",
+      "living": "6",
+      "university": "b",
+      "description": "m",
+      "primary": "farka f07",
+      "pgrade": "n",
+      "pcertificate": "C:\\fakepath\\users.json",
+      "secondary": "farka f07",
+      "sgrade": "n",
+      "scertificate": "C:\\fakepath\\users.json",
+      "wish": "nb",
+      "career": "bn",
+      "course": "bn"
+    }
   ]
 }

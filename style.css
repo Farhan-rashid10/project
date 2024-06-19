@@ -65,6 +65,7 @@ body{
 }
 .row{
     margin-top: 10px;
+    margin-bottom: 20px;
 }
 
 .n{
@@ -267,6 +268,9 @@ border-color: black;
   margin-top: 10px;
 
 }
+.footer{
+  background-color: #ADFF2F;
+  text-align: center;}
 
 
  

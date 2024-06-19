@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="card">
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+       // 1 dom content load
+document.addEventListener("DOMContentLoaded",function(){
+    getdata()
+    
+   
+
+})
+//3 getting update one by one
+function getdata(){
+  fetch("http://localhost:3000/update")
+  .then(res=>res.json())
+  .then(update=>{
+  update.forEach(addmovie)   
+  });
+}
+// 2 getting all update
+  function addmovie(user){
+    let row=document.getElementById("card")
+    let div=document.createElement("div")
+    div.classList.add("col-3")
+    div.innerHTML=`<div class="card">
+        <p>${user.fName}</p>
+          <p>${user.lName}</p>
+            <p>${user.surname}</p>
+              <p>${user.email}</p>
+                <p>${user.number}</p>
+               <p>${user.county}</p>
+                <p>${user.birth}</p>
+                <p>${user.gender}</p>
+                <p>${user.residence}</p>
+          <p>${user.nationality}</p>
+            <p>${user.applied}</p>
+              <p>${user.disable}</p>
+                <p>${user.living}</p>
+               <p>${user.university}</p>
+                <p>${user.describtion}</p>
+                <p>${user.primary}</p>
+                <p>${user.pgrade}</p>
+                        <img src="${user.pcertificate}" alt="">
+
+          <p>${user.secondary}</p>
+            <p>${user.sgrade}</p>
+                    <img src="${user.scertificate}" alt="">
+
+              <p>${user.wish}</p>
+                <p>${user.career}</p>
+               <p>${user.course}</p>
+
+    </div>`
+    row.appendChild(div)
+    
+}
+    </script>
+</body>
+</html>
